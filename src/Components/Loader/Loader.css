@@ -1,0 +1,14 @@
+.loader {
+    display: flex;
+    margin: auto;
+    height: 50vmax !important;
+    align-items: center;
+    justify-content: center
+}
+
+.spinner-border {
+    width: 7rem;
+    height: 7rem;
+    color: rgb(157, 49, 97);
+    ;
+}

@@ -1,0 +1,343 @@
+.currentWeather {
+    display: flex;
+    margin-top: 2.5vmax;
+    height: 22rem;
+    width: 60%;
+    border: 1px rgb(43, 30, 30);
+    border-radius: 25px;
+    border-style: outset;
+    background: linear-gradient(160deg, rgba(60, 192, 254, 0.7) 40%, rgba(0, 102, 255, 0.6));
+    box-shadow: rgb(0 0 0 / 75%) 2px 2px 5px 0px;
+}
+
+
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5rem;
+    height: 75rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(0deg, #615878b8, #615878c5 20%, #464161c1 60%, #313050c5 90%, #313050ab); */
+}
+
+.clearDay {
+    background-image: url("./../../Images/Bcg/clearDay.jpg");
+}
+
+.clearNight {
+    background-image: url("./../../Images/Bcg/clearNight.jpg");
+}
+
+.Cloudy {
+    background-image: url("./../../Images/Bcg/Cloudy.jpg");
+}
+
+.Haze {
+    background-image: url("./../../Images/Bcg/Haze.jpg");
+}
+
+.Overcast {
+    background-image: url("./../../Images/Bcg/Overcast.jpg");
+}
+
+.rainDay {
+    background-image: url("./../../Images/Bcg/rainDay.jpg");
+}
+
+.rainNight {
+    background-image: url("./../../Images/Bcg/rainNight.jpg");
+}
+
+.Thunderstorm {
+    background-image: url("./../../Images/Bcg/Thunderstorm.jpg");
+}
+
+.rainNight>div>h1 {
+    color: aliceblue;
+}
+
+.Haze>div>h1 {
+    color: aliceblue;
+}
+
+.Thunderstorm>div>h1 {
+    color: aliceblue;
+}
+
+.location {
+    margin-top: 0.5rem;
+    width: 60%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location>h1 {
+    margin-top: 1rem;
+}
+
+.current>h1 {
+    font-size: 4.5rem;
+    margin-top: 1rem;
+
+}
+
+.current>h1>img {
+    height: 4.5vmax;
+    margin-left: -4rem;
+
+}
+
+.current {
+    margin-top: 6rem;
+    margin-left: 18rem;
+    height: 70%;
+    width: 30%;
+    /* border:solid red; */
+
+}
+
+.weatherDetails {
+    margin-top: 7.6rem;
+    margin-left: 1rem;
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.weatherDetails>div>p {
+    margin: 0.6px;
+    font-size: 1.15rem;
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.5rem;
+    color: white;
+    margin-top: -1px;
+    /* padding: 0; */
+}
+
+
+.hourCards {
+    display: flex;
+    flex-direction: row;
+    max-height: 20rem;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid;
+}
+
+.hourlyWeather {
+    margin-top: 2vmax;
+    width: 85%;
+}
+
+
+.dailyWeather {
+    margin-top: 3vmax;
+    width: 85%;
+}
+
+.dailyCards {
+    display: flex;
+    flex-direction: row;
+    max-height: 17rem;
+    border-top: 2px solid;
+}
+
+.hourlyCards {
+    flex: 0 0 auto;
+
+}
+
+.scrollBtn {
+    background: transparent;
+    border: none;
+    font-size: 2.2rem;
+    position: absolute;
+    color:  rgba(28, 190, 244, 0.834);
+    
+}
+.scrollBtnLeft {
+   margin-left: -2.2rem;
+    
+}
+.scrollBtnDivLeft{
+  display: flex;
+  align-items: center;
+    
+}
+.scrollBtnDivRight{
+    position: relative;
+  display: flex;
+  align-items: center;
+     
+}
+
+
+@media screen and (max-width: 950px) {
+    .currentWeather {
+        width: 90%;
+    }
+
+    .location {
+        margin-left: 3.4rem;
+    }
+
+    .current {
+        position: absolute;
+        margin-top: 3.7rem;
+        margin-left: 11rem;
+    }
+
+    .current>h1 {
+        font-size: 2rem;
+    }
+
+    .current>h4 {
+        font-size: 20px;
+        margin-left: -2rem;
+    }
+
+    .current>p {
+        font-size: 12px;
+        margin-left: -2rem;
+    }
+
+    .weatherDetails {
+        margin-top: 12rem;
+        width: 60%;
+    }
+
+    .weatherDetails>div>p {
+        font-size: 14px;
+    }
+
+    .hourCards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .hourlyCards {
+        flex: 0 0 auto;
+    }
+
+    .dailyCards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .dailyForecast {
+        flex: 0 0 auto;
+    }
+
+    .hourlyCards>p>img {
+        height: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    .dailyForecast>p>img {
+        height: 1.3rem;
+        padding-bottom: 3px;
+    }
+    .scrollBtnDivLeft{
+      display: none;
+    }
+    .scrollBtnDivRight{
+      display: none;
+    }
+
+}
+/* @media screen and (max-width: 900px) {
+    .currentWeather {
+        width: 90%;
+    }
+
+    .location {
+        margin-left: 3.4rem;
+    }
+
+    .current {
+        position: absolute;
+        margin-top: 3.7rem;
+        margin-left: 11rem;
+    }
+
+    .current>h1 {
+        font-size: 2rem;
+    }
+
+    .current>h4 {
+        font-size: 20px;
+        margin-left: -2rem;
+    }
+
+    .current>p {
+        font-size: 12px;
+        margin-left: -2rem;
+    }
+
+    .weatherDetails {
+        margin-top: 12rem;
+        width: 60%;
+    }
+
+    .weatherDetails>div>p {
+        font-size: 14px;
+    }
+
+    .hourCards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .hourlyCards {
+        flex: 0 0 auto;
+    }
+
+    .dailyCards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .dailyForecast {
+        flex: 0 0 auto;
+    }
+
+    .hourlyCards>p>img {
+        height: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    .dailyForecast>p>img {
+        height: 1.3rem;
+        padding-bottom: 3px;
+    }
+    .scrollBtnDivLeft{
+      display: none;
+    }
+    .scrollBtnDivRight{
+      display: none;
+    }
+
+} */
