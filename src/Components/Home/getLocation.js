@@ -2,7 +2,7 @@ import { currentWeather, hourlyWeather, dailyWeather } from '../../Api';
 
 
 /* This function asks for user location and then pass the lattitude and longitude to geoApiUrl which returns with city name and countryCode.
-    The city and countryCode is passed to foreca location id url and then it returns the is of the location, which is then passed to current
+    The city and countryCode is passed to foreca location id url and then it returns the id of the location, which is then passed to current
      weather url, hourlyUrl and dailyUrl respectively to fetch the weather details.
 */
 
