@@ -20,7 +20,6 @@
     height: 75rem;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-image: linear-gradient(0deg, #615878b8, #615878c5 20%, #464161c1 60%, #313050c5 90%, #313050ab); */
 }
 
 .clearDay {
@@ -97,7 +96,6 @@
     margin-left: 18rem;
     height: 70%;
     width: 30%;
-    /* border:solid red; */
 
 }
 
@@ -124,7 +122,6 @@
     margin-left: 3.5rem;
     color: white;
     margin-top: -1px;
-    /* padding: 0; */
 }
 
 
