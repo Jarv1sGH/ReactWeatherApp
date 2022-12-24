@@ -28,8 +28,6 @@ export const getLocation = (setLoading, setLocationName,options,hourlyParams,dai
                 setLocationName(
                     response.locations[0].name +
                     (', ') +
-                    response.locations[0].adminArea +
-                    (', ') +
                     countryCode
                 );
                 weatherUrl = `https://foreca-weather.p.rapidapi.com/current/${locationID}`;
